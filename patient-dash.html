@@ -1,0 +1,59 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patient Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="dash-mobile-header">
+  <a href="index.html" class="dash-mobile-logo">
+    <img src="images/stackly-logo.webp" alt="Stackly" class="nav-logo-img">
+  </a>
+  <button class="dash-hamburger" onclick="toggleDashSidebar()" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</div>
+<div class="sidebar-overlay" onclick="toggleDashSidebar()"></div>
+
+<div class="dashboard-layout">
+  <aside class="sidebar">
+    <div class="sidebar-logo stackly-logo" style="padding:20px 24px 16px;">
+      <a href="index.html" style="display:block;text-decoration:none;">
+        <img src="images/stackly-logo.webp" alt="Stackly" class="dash-sidebar-logo-img">
+      </a>
+    </div>
+    <div class="sidebar-user">
+      <div class="su-name">Loading...</div>
+      <div class="su-email">Please wait...</div>
+    </div>
+    <nav class="sidebar-nav">
+      <div class="nav-label">Patient Portal</div>
+      <a href="javascript:void(0)" class="active" onclick="return dashSection('patient','overview',this)"><span class="icon">🏠</span> Dashboard</a>
+      <a href="javascript:void(0)" onclick="return dashSection('patient','appointments',this)"><span class="icon">📅</span> Appointments <span class="nav-badge">3</span></a>
+      <a href="javascript:void(0)" onclick="return dashSection('patient','medications',this)"><span class="icon">💊</span> Medications</a>
+      <a href="javascript:void(0)" onclick="return dashSection('patient','test-results',this)"><span class="icon">🧪</span> Test Results</a>
+      <a href="javascript:void(0)" onclick="return dashSection('patient','records',this)"><span class="icon">📋</span> Medical Records</a>
+      <a href="javascript:void(0)" onclick="return dashSection('patient','prescriptions',this)"><span class="icon">📄</span> Prescriptions</a>
+      <a href="javascript:void(0)" onclick="return dashSection('patient','billing',this)"><span class="icon">🧾</span> Billing &amp; Insurance</a>
+      <div class="nav-label">Account</div>
+      <a href="javascript:void(0)" onclick="return dashSection('patient','settings',this)"><span class="icon">👤</span> My Profile</a>
+      <a href="javascript:void(0)" class="sidebar-signout" onclick="signOut()"><span class="icon">🔌</span> Sign Out</a>
+    </nav>
+  </aside>
+  <main class="dash-main" id="patient-dash-content">
+    <div style="display:flex;align-items:center;justify-content:center;height:100vh;">
+      <div class="loader"></div>
+    </div>
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+

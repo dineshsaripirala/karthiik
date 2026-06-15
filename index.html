@@ -1,0 +1,428 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Stackly – Premium Healthcare Services. Expert doctors, advanced diagnostics, and compassionate care for you and your family.">
+<meta name="keywords" content="Stackly, healthcare, doctors, diagnostics, appointments, medical care India">
+<title>Stackly | Premium Healthcare</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Loading -->
+<div class="page-loading" id="loader">
+  <div class="loader"></div>
+  <p style="color:var(--text-light);font-size:0.875rem;">Loading Stackly...</p>
+</div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">
+      <img src="images/stackly-logo.webp" alt="Stackly Logo" class="nav-logo-img">
+  </a>
+     <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="doctors.html">Doctors</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="register.html" class="nav-register">Register</a>
+      <a href="signin.html" class="nav-signin">Sign In</a>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="doctors.html">Doctors</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+    <a href="register.html">Register</a>
+    <a href="signin.html">Sign In</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div data-aos="fade-right">
+      <div class="hero-badge">🟢 Now Accepting New Patients</div>
+      <h1>Your Health,<br>Our <em>Priority.</em><br>Always.</h1>
+      <p class="hero-text">Experience world-class healthcare with compassionate doctors, advanced diagnostics, and personalised treatment plans designed around you.</p>
+      <div class="hero-btns">
+        <a href="404.html" class="btn btn-primary">Book Appointment →</a>
+        <a href="404.html" class="btn btn-outline">Meet Our Doctors</a>
+      </div>
+    </div>
+    <div class="hero-img-wrap" data-aos="fade-left">
+      <div class="hero-img">
+        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=700&q=70&fm=webp" alt="Doctor with patient" loading="lazy" width="700" height="480">
+      </div>
+      <div class="hero-badge-card">
+        <div class="icon">🏆</div>
+        <div>
+          <strong>ISO Certified</strong>
+          <span>Healthcare Excellence</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item" data-aos="fade-up"><h3 class="counter" data-target="125000">0</h3><p>Patients Served</p></div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="100"><h3 class="counter" data-target="340">0</h3><p>Doctors Available</p></div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="200"><h3 class="counter" data-target="25">0</h3><p>Years of Experience</p></div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="300"><h3 class="counter" data-target="85">0</h3><p>Hospitals Connected</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="hiw-section">
+  <div class="container">
+    <div class="text-center" data-aos="fade-up">
+      <div class="section-label">Simple Process</div>
+      <h2 class="section-title">Healthcare Made Simple</h2>
+      <p class="section-sub">From booking to recovery in four easy steps — care designed to fit around your life.</p>
+    </div>
+    <div class="steps-grid" style="margin-top:56px;">
+      <div class="step-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="step-num">01</div>
+        <div class="step-icon-box">🔍</div>
+        <h3>Search &amp; Choose</h3>
+        <p>Browse 340+ specialists, read verified patient reviews, and choose the right doctor for your specific needs.</p>
+      </div>
+      <div class="step-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="step-num">02</div>
+        <div class="step-icon-box">📅</div>
+        <h3>Book Appointment</h3>
+        <p>Select a convenient time slot — in-clinic or video call — and confirm your booking in under 2 minutes.</p>
+      </div>
+      <div class="step-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="step-num">03</div>
+        <div class="step-icon-box">🩺</div>
+        <h3>Consult Your Doctor</h3>
+        <p>Meet your specialist, receive a personalised diagnosis, and walk away with a clear, actionable treatment plan.</p>
+      </div>
+      <div class="step-card" data-aos="fade-up" data-aos-delay="400">
+        <div class="step-num">04</div>
+        <div class="step-icon-box">💚</div>
+        <h3>Recover &amp; Follow Up</h3>
+        <p>Access digital reports, track your recovery, and schedule follow-ups — all from your personalised dashboard.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section>
+  <div class="container">
+    <div class="text-center" data-aos="fade-up">
+      <div class="section-label">Why Stackly</div>
+      <h2 class="section-title">Healthcare You Can Trust</h2>
+      <p class="section-sub">We combine cutting-edge technology with compassionate care to deliver outcomes that matter.</p>
+    </div>
+    <div class="why-grid" style="margin-top:48px;">
+      <div class="why-card" data-aos="fade-up" data-aos-delay="100"><div class="why-icon">🩺</div><h3>Expert Specialists</h3><p>Over 340 board-certified specialists across 25+ departments ready to provide expert care.</p></div>
+      <div class="why-card" data-aos="fade-up" data-aos-delay="200"><div class="why-icon">⚡</div><h3>24/7 Emergency Care</h3><p>Round-the-clock emergency services with average response time under 8 minutes.</p></div>
+      <div class="why-card" data-aos="fade-up" data-aos-delay="300"><div class="why-icon">🔬</div><h3>Advanced Diagnostics</h3><p>State-of-the-art imaging and lab services with same-day results for critical cases.</p></div>
+      <div class="why-card" data-aos="fade-up" data-aos-delay="100"><div class="why-icon">📱</div><h3>Digital Health Records</h3><p>Secure, instant access to your complete medical history from anywhere, anytime.</p></div>
+      <div class="why-card" data-aos="fade-up" data-aos-delay="200"><div class="why-icon">💊</div><h3>Integrated Pharmacy</h3><p>In-house pharmacy with all prescriptions fulfilled within minutes of your consultation.</p></div>
+      <div class="why-card" data-aos="fade-up" data-aos-delay="300"><div class="why-icon">🤝</div><h3>Patient-Centred Care</h3><p>Personalised treatment plans built around your lifestyle, values, and health goals.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED SERVICES -->
+<section style="background:var(--primary-light);">
+  <div class="container">
+    <div class="text-center" data-aos="fade-up">
+      <div class="section-label">Our Services</div>
+      <h2 class="section-title">Comprehensive Healthcare Services</h2>
+      <p class="section-sub">From routine check-ups to complex surgeries — all under one roof.</p>
+    </div>
+    <div class="services-grid" style="margin-top:48px;">
+      <a href="404.html" class="service-card" data-aos="fade-up" data-aos-delay="100"><div class="service-icon">❤️</div><h3>Cardiology</h3><p>Heart health diagnosis and treatment with advanced cardiac imaging.</p><div class="service-price">From ₹999 · Book Now →</div></a>
+      <a href="404.html" class="service-card" data-aos="fade-up" data-aos-delay="200"><div class="service-icon">🧠</div><h3>Neurology</h3><p>Specialised neurological care for brain, spine, and nervous system conditions.</p><div class="service-price">From ₹1299 · Book Now →</div></a>
+      <a href="404.html" class="service-card" data-aos="fade-up" data-aos-delay="300"><div class="service-icon">🦷</div><h3>Dental Care</h3><p>Complete dental services from routine cleaning to cosmetic dentistry.</p><div class="service-price">From ₹499 · Book Now →</div></a>
+      <a href="404.html" class="service-card" data-aos="fade-up" data-aos-delay="100"><div class="service-icon">👶</div><h3>Pediatrics</h3><p>Expert child healthcare with dedicated specialists for every age group.</p><div class="service-price">From ₹599 · Book Now →</div></a>
+      <a href="404.html" class="service-card" data-aos="fade-up" data-aos-delay="200"><div class="service-icon">🦴</div><h3>Orthopedics</h3><p>Bone, joint, and muscle care including arthroscopy and joint replacement.</p><div class="service-price">From ₹1199 · Book Now →</div></a>
+      <a href="404.html" class="service-card" data-aos="fade-up" data-aos-delay="300"><div class="service-icon">🔬</div><h3>Diagnostics</h3><p>1000+ lab tests and imaging services with accurate, rapid results.</p><div class="service-price">From ₹299 · Book Now →</div></a>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED DOCTORS -->
+<section class="featured-doctors-section">
+  <div class="container">
+    <div class="section-header-row" data-aos="fade-up">
+      <div>
+        <div class="section-label">Our Experts</div>
+        <h2 class="section-title">Meet Our Top Specialists</h2>
+        <p class="section-sub">Board-certified doctors with decades of combined experience, consistently rated highly by patients.</p>
+      </div>
+      <a href="404.html" class="btn btn-outline">View All Doctors →</a>
+    </div>
+    <div class="doctors-grid" style="margin-top:48px;">
+      <div class="doctor-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="doctor-img"><img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=70&fm=webp" alt="Dr. Anil Sharma" loading="lazy"></div>
+        <div class="doctor-info">
+          <h3>Dr. Anil Sharma</h3>
+          <div class="spec">Cardiologist</div>
+          <div class="doctor-meta"><span>⭐ 4.9</span><span>18 yrs exp</span></div>
+          <span class="avail-badge">✓ Available Today</span>
+        </div>
+      </div>
+      <div class="doctor-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="doctor-img"><img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&q=70&fm=webp" alt="Dr. Meera Nair" loading="lazy"></div>
+        <div class="doctor-info">
+          <h3>Dr. Meera Nair</h3>
+          <div class="spec">Neurologist</div>
+          <div class="doctor-meta"><span>⭐ 4.8</span><span>14 yrs exp</span></div>
+          <span class="avail-badge">✓ Available Today</span>
+        </div>
+      </div>
+      <div class="doctor-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="doctor-img"><img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&q=70&fm=webp" alt="Dr. Suresh Patel" loading="lazy"></div>
+        <div class="doctor-info">
+          <h3>Dr. Suresh Patel</h3>
+          <div class="spec">Orthopedic Surgeon</div>
+          <div class="doctor-meta"><span>⭐ 4.9</span><span>22 yrs exp</span></div>
+          <span class="avail-badge">✓ Available Today</span>
+        </div>
+      </div>
+      <div class="doctor-card" data-aos="fade-up" data-aos-delay="400">
+        <div class="doctor-img"><img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&q=70&fm=webp" alt="Dr. Kavitha Rao" loading="lazy"></div>
+        <div class="doctor-info">
+          <h3>Dr. Kavitha Rao</h3>
+          <div class="spec">Pediatrician</div>
+          <div class="doctor-meta"><span>⭐ 4.9</span><span>12 yrs exp</span></div>
+          <span class="avail-badge">✓ Available Today</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EMERGENCY SECTION -->
+<section class="emergency-section">
+  <div class="container">
+    <div class="emergency-inner">
+      <div data-aos="fade-right">
+        <div class="section-label" style="background:rgba(255,255,255,0.15);color:#fff;">Emergency Care</div>
+        <h2>24/7 Emergency<br>Medical Support</h2>
+        <p>Our emergency department never sleeps. With fully equipped trauma bays, ICUs, and a dedicated response team, we're always ready when every second counts.</p>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;">
+          <a href="404.html" class="btn btn-white">📞 Call Emergency</a>
+          <a href="404.html" class="btn btn-outline" style="border-color:rgba(255,255,255,0.5);color:#fff;">Find Us</a>
+        </div>
+      </div>
+      <div data-aos="fade-left">
+        <div class="emergency-stats">
+          <div class="emergency-stat"><strong>&lt;8 min</strong><span>Avg Response Time</span></div>
+          <div class="emergency-stat"><strong>50+</strong><span>ICU Beds</span></div>
+          <div class="emergency-stat"><strong>24/7</strong><span>Trauma Centre</span></div>
+          <div class="emergency-stat"><strong>100%</strong><span>Success Rate Goal</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section>
+  <div class="container">
+    <div class="text-center" data-aos="fade-up">
+      <div class="section-label">Patient Stories</div>
+      <h2 class="section-title">What Our Patients Say</h2>
+      <p class="section-sub">Real experiences from real patients who trusted Stackly with their health.</p>
+    </div>
+    <div class="testimonials-grid" style="margin-top:48px;">
+      <div class="testi-card" data-aos="fade-up" data-aos-delay="100"><div class="stars">★★★★★</div><p>"The cardiology team here literally saved my life. From diagnosis to surgery, every step was handled with expertise and warmth. I am forever grateful."</p><div class="testi-author"><div class="testi-avatar">RK</div><div><strong>Rajesh Kumar</strong><span>Cardiac Patient</span></div></div></div>
+      <div class="testi-card" data-aos="fade-up" data-aos-delay="200"><div class="stars">★★★★★</div><p>"As a mother, finding the right pediatric care was my priority. The doctors here are patient, knowledgeable, and truly wonderful with children."</p><div class="testi-author"><div class="testi-avatar">PS</div><div><strong>Priya Sharma</strong><span>Parent of Patient</span></div></div></div>
+      <div class="testi-card" data-aos="fade-up" data-aos-delay="300"><div class="stars">★★★★★</div><p>"The digital health records system is a game-changer. I can access all my reports instantly. The diagnostic lab results were ready within hours."</p><div class="testi-author"><div class="testi-avatar">AM</div><div><strong>Arjun Mehta</strong><span>Regular Patient</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG PREVIEW -->
+<!--<section style="background:var(--primary-light);">
+  <div class="container">
+    <div class="section-header-row" data-aos="fade-up">
+      <div>
+        <div class="section-label">Health Insights</div>
+        <h2 class="section-title">From Our Medical Blog</h2>
+        <p class="section-sub">Expert advice, health tips, and the latest medical research — curated by our specialists.</p>
+      </div>
+      <a href="404.html" class="btn btn-outline">Read All Articles →</a>
+    </div>
+    <div class="blog-grid" style="margin-top:48px;">
+      <a href="404.html" class="card blog-card-home" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=500&q=70&fm=webp" alt="Heart Health" loading="lazy"></div>
+        <div class="card-body">
+          <div class="card-tag">Cardiology</div>
+          <h3 class="card-title">10 Foods That Keep Your Heart Healthy</h3>
+          <p class="card-text">Simple dietary changes that cardiologists recommend for a stronger, healthier heart — backed by the latest research.</p>
+          <div class="blog-meta-row"><span class="blog-author">Dr. Anil Sharma</span><span class="blog-read">5 min read</span></div>
+        </div>
+      </a>
+      <a href="404.html" class="card blog-card-home" data-aos="fade-up" data-aos-delay="200">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=500&q=70&fm=webp" alt="Mental Health" loading="lazy"></div>
+        <div class="card-body">
+          <div class="card-tag">Mental Health</div>
+          <h3 class="card-title">Managing Stress in a High-Pressure World</h3>
+          <p class="card-text">Evidence-based strategies from our psychiatry team to reduce stress and improve mental well-being every day.</p>
+          <div class="blog-meta-row"><span class="blog-author">Dr. Priya Menon</span><span class="blog-read">4 min read</span></div>
+        </div>
+      </a>
+      <a href="404.html" class="card blog-card-home" data-aos="fade-up" data-aos-delay="300">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&q=70&fm=webp" alt="Exercise" loading="lazy"></div>
+        <div class="card-body">
+          <div class="card-tag">Wellness</div>
+          <h3 class="card-title">Why 30 Minutes of Walking Changes Everything</h3>
+          <p class="card-text">The science behind daily walking and how this one habit can dramatically reduce your risk of chronic disease.</p>
+          <div class="blog-meta-row"><span class="blog-author">Dr. Meera Nair</span><span class="blog-read">3 min read</span></div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>--->
+
+<!-- PARTNERS / ACCREDITATIONS -->
+<section class="partners-section">
+  <div class="container">
+    <p class="partners-label" data-aos="fade-up">Trusted &amp; Accredited By</p>
+    <div class="partners-strip" data-aos="fade-up" data-aos-delay="100">
+      <div class="partner-badge">🏥 NABH Accredited</div>
+      <div class="partner-divider"></div>
+      <div class="partner-badge">🔬 NABL Certified</div>
+      <div class="partner-divider"></div>
+      <div class="partner-badge">🏆 ISO 9001:2015</div>
+      <div class="partner-divider"></div>
+      <div class="partner-badge">💊 Ayushman Bharat</div>
+      <div class="partner-divider"></div>
+      <div class="partner-badge">🌐 WHO Guidelines</div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="background:var(--primary-light);">
+  <div class="container">
+    <div class="text-center" data-aos="fade-up">
+      <div class="section-label">FAQ</div>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-sub">Quick answers to common questions about our services and policies.</p>
+    </div>
+    <div class="faq-list" style="margin-top:48px;">
+      <div class="faq-item" data-aos="fade-up"><div class="faq-q" onclick="toggleFaq(this)">How do I book an appointment? <span class="arrow">▼</span></div><div class="faq-a">You can book through our website, mobile app, or by calling our helpline. Most appointments can be confirmed within 24 hours.</div></div>
+      <div class="faq-item" data-aos="fade-up" data-aos-delay="100"><div class="faq-q" onclick="toggleFaq(this)">Do you accept health insurance? <span class="arrow">▼</span></div><div class="faq-a">Yes, we accept all major health insurance providers including Star Health, HDFC ERGO, Bajaj Allianz, and government schemes like Ayushman Bharat.</div></div>
+      <div class="faq-item" data-aos="fade-up" data-aos-delay="200"><div class="faq-q" onclick="toggleFaq(this)">What are your OPD timings? <span class="arrow">▼</span></div><div class="faq-a">OPD timings are Mon–Sat 8:00 AM to 8:00 PM and Sunday 9:00 AM to 2:00 PM. Emergency services are available 24/7.</div></div>
+      <div class="faq-item" data-aos="fade-up" data-aos-delay="300"><div class="faq-q" onclick="toggleFaq(this)">How soon are lab results available? <span class="arrow">▼</span></div><div class="faq-a">Routine tests are ready within 24–48 hours. Critical and emergency tests are available within 2–4 hours. Results are shared digitally.</div></div>
+      <div class="faq-item" data-aos="fade-up" data-aos-delay="400"><div class="faq-q" onclick="toggleFaq(this)">Is telemedicine available? <span class="arrow">▼</span></div><div class="faq-a">Yes, we offer video consultations with our specialists. You can book teleconsultations through the patient dashboard after signing in.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-inner">
+      <div class="cta-content" data-aos="fade-right">
+        <div class="section-label" style="background:rgba(255,255,255,0.15);color:#fff;">Start Today</div>
+        <h2>Ready to Take Charge<br>of Your Health?</h2>
+        <p>Join 1,25,000+ patients who trust Stackly for expert, compassionate healthcare. Your first consultation is just a click away.</p>
+        <div class="cta-btns">
+          <a href="404.html" class="btn btn-white">Create Free Account →</a>
+          <a href="404.html" class="cta-outline-btn">Book Appointment</a>
+        </div>
+      </div>
+      <div class="cta-stats-wrap" data-aos="fade-left" data-aos-delay="200">
+        <div class="cta-stat-card"><span class="cta-stat-num">1,25,000+</span><span class="cta-stat-lbl">Happy Patients</span></div>
+        <div class="cta-stat-card"><span class="cta-stat-num">340+</span><span class="cta-stat-lbl">Expert Doctors</span></div>
+        <div class="cta-stat-card"><span class="cta-stat-num">4.9 ★</span><span class="cta-stat-lbl">Average Rating</span></div>
+        <div class="cta-stat-card"><span class="cta-stat-num">25 yrs</span><span class="cta-stat-lbl">Of Excellence</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html"><img src="images/stackly-logo.webp" alt="Stackly" class="footer-logo-img"></a>
+        <p>India's most trusted healthcare network, combining clinical excellence with compassionate, patient-first care since 1999.</p>
+        <div class="social-icons">
+          <a href="404.html" class="social-icon" title="Instagram" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="404.html" class="social-icon" title="Facebook" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="404.html" class="social-icon" title="LinkedIn" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="doctors.html">Doctors</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Healthcare Services</h4>
+        <ul>
+          <li><a href="404.html">Consultation</a></li>
+          <li><a href="404.html">Emergency Care</a></li>
+          <li><a href="404.html">Diagnostics</a></li>
+          <li><a href="404.html">Dental Care</a></li>
+          <li><a href="404.html">Pediatrics</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a ="#">MG Road, Bengaluru 560001</a></li>
+          <li><a ="#">+91 80 4567 8900</a></li>
+          <li><a ="#">info@stackly.health</a></li>
+          <li><a ="#">Mon–Sat: 8AM–8PM</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Stackly. All rights reserved.</span>
+      <div class="footer-legal-links" style="display:flex;gap:20px;">
+        <a href="404.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;transition:color 0.3s;">Privacy</a>
+        <a href="404.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;transition:color 0.3s;">Terms</a>
+        <a href="404.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;transition:color 0.3s;">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+

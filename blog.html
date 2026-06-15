@@ -1,0 +1,193 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Stackly Health Blog – Expert articles, wellness guides, and health tips from our medical team.">
+<title>Health Blog | Stackly</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html"><img src="images/stackly-logo.webp" alt="Stackly" class="nav-logo-img"></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="doctors.html">Doctors</a>
+      <a href="blog.html" class="active">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="register.html" class="nav-register">Register</a>
+      <a href="signin.html" class="nav-signin">Sign In</a>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="doctors.html">Doctors</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+    <a href="register.html">Register</a>
+    <a href="signin.html">Sign In</a>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<div style="background:linear-gradient(135deg,var(--primary-light),var(--teal-light));padding:100px 0 60px;">
+  <div class="container text-center">
+    <div class="section-label">Health Blog</div>
+    <h1 class="section-title" style="font-size:clamp(2rem,5vw,3rem);">Healthcare Insights & Tips</h1>
+    <p class="section-sub" style="margin:0 auto;">Expert articles, wellness guides, and health tips from our medical team.</p>
+  </div>
+</div>
+
+<!-- BLOG GRID -->
+<section>
+  <div class="container">
+    <div class="blog-grid">
+      <div class="card" data-aos="fade-up" style="cursor:pointer;">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&q=70&fm=webp" alt="Heart health" loading="lazy"></div>
+        <div class="card-body">
+          <div class="card-tag">Cardiology</div>
+          <h3 class="card-title">10 Simple Habits for a Healthy Heart</h3>
+          <p class="card-text">Discover evidence-based daily practices that cardiologists recommend to protect and strengthen your heart.</p>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:16px;">
+            <span style="font-size:0.75rem;color:var(--text-light);">Dr. Aryan Kapoor · June 1, 2026</span>
+            <a href="404.html" class="btn btn-outline" style="padding:6px 14px;font-size:0.78rem;">Read More →</a>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="100" style="cursor:pointer;">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=500&q=70&fm=webp" alt="Nutrition" loading="lazy"></div>
+        <div class="card-body">
+          <div class="card-tag">Nutrition</div>
+          <h3 class="card-title">The Indian Diet & Diabetes Prevention</h3>
+          <p class="card-text">How traditional Indian foods can be modified to create a powerful diabetes-prevention diet plan.</p>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:16px;">
+            <span style="font-size:0.75rem;color:var(--text-light);">Dr. Priya Sharma · May 22, 2026</span>
+            <a href="404.html" class="btn btn-outline" style="padding:6px 14px;font-size:0.78rem;">Read More →</a>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="200" style="cursor:pointer;">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1527137342181-19aab11a8ee8?w=500&q=70&fm=webp" alt="Mental wellness" loading="lazy"></div>
+        <div class="card-body">
+          <div class="card-tag">Mental Health</div>
+          <h3 class="card-title">Managing Workplace Stress & Burnout</h3>
+          <p class="card-text">Practical, psychiatrist-approved strategies to recognise, prevent, and recover from burnout.</p>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:16px;">
+            <span style="font-size:0.75rem;color:var(--text-light);">Dr. Nandini Roy · May 15, 2026</span>
+            <a href="404.html" class="btn btn-outline" style="padding:6px 14px;font-size:0.78rem;">Read More →</a>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-aos="fade-up" style="cursor:pointer;">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=500&q=70&fm=webp" alt="Children health" loading="lazy"></div>
+        <div class="card-body">
+          <div class="card-tag">Pediatrics</div>
+          <h3 class="card-title">Vaccination Schedule for Children in 2026</h3>
+          <p class="card-text">A complete guide to recommended vaccinations for children from birth to 18 years.</p>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:16px;">
+            <span style="font-size:0.75rem;color:var(--text-light);">Dr. Anjali Nair · May 8, 2026</span>
+            <a href="404.html" class="btn btn-outline" style="padding:6px 14px;font-size:0.78rem;">Read More →</a>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="100" style="cursor:pointer;">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=500&q=70&fm=webp" alt="Yoga wellness" loading="lazy"></div>
+        <div class="card-body">
+          <div class="card-tag">Wellness</div>
+          <h3 class="card-title">Yoga & Its Proven Medical Benefits</h3>
+          <p class="card-text">Scientific evidence backing yoga for chronic pain, anxiety, blood pressure, and more.</p>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:16px;">
+            <span style="font-size:0.75rem;color:var(--text-light);">Dr. Meera Pillai · May 1, 2026</span>
+            <a href="404.html" class="btn btn-outline" style="padding:6px 14px;font-size:0.78rem;">Read More →</a>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="200" style="cursor:pointer;">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=500&q=70&fm=webp" alt="Sleep health" loading="lazy"></div>
+        <div class="card-body">
+          <div class="card-tag">Sleep Health</div>
+          <h3 class="card-title">Why Sleep Is Your Best Medicine</h3>
+          <p class="card-text">How quality sleep impacts immunity, metabolism, mental health, and longevity — and how to improve yours.</p>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:16px;">
+            <span style="font-size:0.75rem;color:var(--text-light);">Dr. Kiran Reddy · Apr 24, 2026</span>
+            <a href="404.html" class="btn btn-outline" style="padding:6px 14px;font-size:0.78rem;">Read More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html"><img src="images/stackly-logo.webp" alt="Stackly" class="footer-logo-img"></a>
+        <p>India's most trusted healthcare network, combining clinical excellence with compassionate, patient-first care since 1999.</p>
+        <div class="social-icons">
+          <a href="404.html" class="social-icon" title="Instagram" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="404.html" class="social-icon" title="Facebook" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="404.html" class="social-icon" title="LinkedIn" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="doctors.html">Doctors</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Healthcare Services</h4>
+        <ul>
+          <li><a href="404.html">Consultation</a></li>
+          <li><a href="404.html">Emergency Care</a></li>
+          <li><a href="404.html">Diagnostics</a></li>
+          <li><a href="404.html">Dental Care</a></li>
+          <li><a href="404.html">Pediatrics</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a ="#">MG Road, Bengaluru 560001</a></li>
+          <li><a ="#">+91 80 4567 8900</a></li>
+          <li><a ="#">info@stackly.health</a></li>
+          <li><a ="#">Mon–Sat: 8AM–8PM</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Stackly. All rights reserved.</span>
+      <div class="footer-legal-links" style="display:flex;gap:20px;">
+        <a href="404.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;transition:color 0.3s;">Privacy</a>
+        <a href="404.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;transition:color 0.3s;">Terms</a>
+        <a href="404.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;transition:color 0.3s;">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
